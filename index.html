@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Héroes y Líderes de Colombia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <header>
+        <nav class="navbar">
+            <h1>Caidos por un mejor país</h1>
+            <ul>
+                <i class="bi bi-house"></i>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <section class="cards-container">
+
+            <!-- Galán -->
+            <div class="card" id="galan">
+                <img src="./galan.png" alt="Luis Carlos Galán">
+                <h2>Luis Carlos Galán</h2>
+                <p>Líder político y periodista, defensor de la democracia y la lucha contra el narcotráfico.</p>
+                <button onclick="mostrarInfo('galan')">Ver más</button>
+            </div>
+
+            <!-- Pizarro -->
+            <div class="card" id="pizarro">
+                <img src="./pizarro.png" alt="Carlos Pizarro">
+                <h2>Carlos Pizarro</h2>
+                <p>Comandante del M-19 y candidato presidencial, impulsor de la paz y la reconciliación.</p>
+                <button onclick="mostrarInfo('pizarro')">Ver más</button>
+            </div>
+
+            <!-- Lara -->
+            <div class="card" id="lara">
+                <img src="./lara.png" alt="Rodrigo Lara Bonilla">
+                <h2>Rodrigo Lara Bonilla</h2>
+                <p>Ministro de Justicia que enfrentó valientemente al narcotráfico en Colombia.</p>
+                <button onclick="mostrarInfo('lara')">Ver más</button>
+            </div>
+
+            <!-- Garzón -->
+            <div class="card" id="garzon">
+                <img src="./garzon.png" alt="Jaime Garzón">
+                <h2>Jaime Garzón</h2>
+                <p>Humorista, periodista y mediador de paz, recordado por su crítica política.</p>
+                <button onclick="mostrarInfo('garzon')">Ver más</button>
+            </div>
+
+            <!-- Uribe -->
+            <div class="card" id="uribe">
+                <img src="./uribe.png" alt="Miguel Uribe Turbay">
+                <h2>Miguel Uribe Turbay</h2>
+                <p>Político joven con propuestas de transparencia y seguridad ciudadana.</p>
+                <button onclick="mostrarInfo('uribe')">Ver más</button>
+            </div>
+
+            <!-- Gaitán -->
+            <div class="card" id="gaitan">
+                <img src="./gaitan.png" alt="Jorge Eliécer Gaitán">
+                <h2>Jorge Eliécer Gaitán</h2>
+                <p>Abogado y líder liberal, símbolo de lucha contra la corrupción y desigualdad.</p>
+                <button onclick="mostrarInfo('gaitan')">Ver más</button>
+            </div>
+
+            <!--Diana Turbay-->
+             <div class="card" id="diana">
+                <img src="./diana.jpg" alt="Diana Turbay">
+                <h2>Diana Turbay</h2>
+                <p>Periodista y líder liberal, símbolo de valentía y compromiso con la paz en Colombia.</p>
+                <button onclick="mostrarInfo('diana')">Ver más</button>
+            </div>
+
+            <!--Guillermo Cano-->
+            <div class="card" id="cano">
+                <img src="./cano.jpg" alt="Guillermo Cano">
+                <h2>Guillermo Cano</h2>
+                <p>Periodista y director de El Espectador, símbolo de la libertad de prensa y la lucha contra el narcotráfico en Colombia.</p>
+                <button onclick="mostrarInfo('cano')">Ver más</button>
+            </div>
+
+            <!--Hurtado-->
+             <div class="card" id="hurtado">
+                <img src="./hurtado.jpg" alt="Álvaro Gómez">
+                <h2>Álvaro Gómez</h2>
+                <p>Abogado, periodista y político colombiano, símbolo de la defensa de la democracia y el diálogo nacional.</p>
+                <button onclick="mostrarInfo('hurtado')">Ver más</button>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <h2 id="modal-titulo"></h2>
+            <p id="modal-texto"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
